@@ -10,7 +10,6 @@ import seaborn as sns
 import shap
 from datetime import datetime
 import time
-from ipywidgets.embed import embed_minimal_html
 import umap
 from pandas_profiling import ProfileReport
 from sklearn.neighbors import kneighbors_graph
@@ -24,7 +23,6 @@ from sklearn.decomposition import DictionaryLearning,FastICA, IncrementalPCA, Ke
 from sklearn.manifold import LocallyLinearEmbedding, Isomap, MDS, SpectralEmbedding, TSNE
 from sklearn.pipeline import make_pipeline
 from sklearn.utils import estimator_html_repr
-#import sklearn
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import  BaseEnsemble,RandomForestClassifier, RandomForestRegressor, RandomTreesEmbedding, ExtraTreesClassifier, ExtraTreesRegressor,\
@@ -50,12 +48,10 @@ import numpy as np
 import pandas as pd
 from io import StringIO
 import io
-#from keplergl import KeplerGl
 import hdbscan
 import datetime
 from scipy.spatial import distance_matrix
 from sklearn.metrics.pairwise import euclidean_distances
-
 import dash_cytoscape as cyto
 import dash
 from dash.dependencies import Input, Output, State
@@ -64,7 +60,6 @@ from dash.exceptions import PreventUpdate
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output# Load Data
 from dash.dash_table.Format import Format, Scheme, Trim
-
 from sklearn.compose import make_column_transformer
 from sklearn.pipeline import make_pipeline
 from joblib import Memory
@@ -89,7 +84,6 @@ set_config(display='diagram')
 from pandas.plotting import scatter_matrix
 import matplotlib.pyplot as plt
 import matplotlib
-import ipywidgets as widget
 from sklearn.base import clone
 import plotly.figure_factory as ff
 
