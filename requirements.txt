@@ -8,11 +8,12 @@ lightgbm
 shap
 umap-learn
 seaborn
-pystan==2.19.1.1
-prophet
 dash-bootstrap-components
 pandas-profiling
 dash
 plotly
 dash-cytoscape==0.2.0
 gunicorn
+Cython
+pystan==2.19.1.1
+prophet
