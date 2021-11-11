@@ -1432,4 +1432,4 @@ def Generate_map(n_clicks,whichdf, lat, lon, color,size,date_column ,data, datau
     return dcc.Graph(figure = fig, id='testtest' )#  height='1343', width='2380'
 
 if __name__ == '__main__':
-    app.run_server(debug=True, dev_tools_ui=True)
+    app.run_server(debug=True)
