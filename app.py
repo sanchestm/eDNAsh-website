@@ -396,6 +396,7 @@ def mpl2plotlyGraph(figure):
 # Build App
 #app = JupyterDash(__name__, external_stylesheets=[dbc.themes.MINTY]) #FLATLY, LUMEN, SUPERHERO
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MINTY])
+server = app.server
 
 def convert2cytoscapeJSON(G):
     # load all nodes into nodes array
@@ -1404,7 +1405,7 @@ def Generate_map(n_clicks,whichdf, lat, lon, color,size,date_column ,data, datau
         df = df.dropna(subset = [x for x in [lat, lon, color,size,date_column] if x != 'none'])
 
         if date_column != 'none':
-            df[date_column] = pd.to_datetime(df[date_column])
+            #df[date_column] = pd.to_datetime(df[date_column])
             store_dict['animation_frame'] = date_column
 
         if color != 'none':
