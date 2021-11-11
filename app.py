@@ -87,6 +87,9 @@ import matplotlib
 from sklearn.base import clone
 import plotly.figure_factory as ff
 
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MINTY])
+server = app.server
+
 class pipemaker2:
     def __init__(self, df,ipt_pipe, target ,*, height = 'auto', width = 'auto'):
         self.pipe_list = []
@@ -395,8 +398,6 @@ def mpl2plotlyGraph(figure):
 
 # Build App
 #app = JupyterDash(__name__, external_stylesheets=[dbc.themes.MINTY]) #FLATLY, LUMEN, SUPERHERO
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MINTY])
-server = app.server
 
 def convert2cytoscapeJSON(G):
     # load all nodes into nodes array
